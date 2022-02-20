@@ -1,0 +1,14 @@
+.form-link-group {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form h2 {
+  text-align: center;
+  color: var(--ZINC-COLOR-DARK);
+}
+
+.form-group > a {
+  text-decoration: none;
+}

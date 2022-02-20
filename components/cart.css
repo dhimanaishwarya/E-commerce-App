@@ -1,7 +1,18 @@
+/* main container styles  */
 .main-container {
   color: var(--FONT-COLOR);
 }
 
+.main-container > h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-cart {
+  justify-content: space-around;
+}
+
+/* product card styles  */
 .card-product {
   max-width: 35rem;
   overflow: hidden;
@@ -49,4 +60,9 @@
   text-align: center;
   width: 3rem;
   height: 2.5rem;
+}
+
+/* product price card styles  */
+.cart-price-card {
+  padding: 2rem;
 }

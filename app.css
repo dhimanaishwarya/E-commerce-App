@@ -65,3 +65,7 @@
 .margin-bottom {
   margin-bottom: 0.8rem;
 }
+
+.justify-content-between {
+  justify-content: space-between;
+}

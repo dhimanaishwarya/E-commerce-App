@@ -11,4 +11,5 @@
 
 .form-group > a {
   text-decoration: none;
+  border: none;
 }

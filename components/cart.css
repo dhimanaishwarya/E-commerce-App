@@ -8,10 +8,6 @@
   padding: 2rem;
 }
 
-.section-cart {
-  justify-content: space-around;
-}
-
 /* product card styles  */
 .card-product {
   max-width: 35rem;

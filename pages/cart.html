@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-app | HomePage</title>
+    <link rel="stylesheet" href="https://zeta-ui.netlify.app/components/root.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="../app.css">
+
+</head>
+
+<body>
+    <!-- header starts  -->
+    <header class="header-wrapper">
+        <a class="active" href="../index.html">
+            <h1>BookzKart</h1>
+        </a>
+        <form action="" class="search-container">
+            <input type="search" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="topnav">
+            <a href="login.html"><button class="btn btn-primary-solid">
+                    Login</button></a>
+            <button class="btn badge-btn">
+                <i class="fas fa-heart fa-2x"></i><span class="badge-icon-count">0</span>
+            </button>
+            <button class="btn badge-btn">
+                <i class="fa fa-shopping-cart fa-2x"></i><span class="badge-icon-count">0</span></button>
+        </nav>
+    </header>
+    <!-- header ends  -->
+
+    <main class="main-container">
+        <h2>CART DETAILS</h2>
+        <section>
+            <!-- product cards  -->
+            <div class="flex card-product card-shadow">
+                <img class="card-product-image" src="../assets/images/1984.jpg" alt="card image" />
+                <div class="card-product-details">
+                    <h3 class="margin-bottom">1984</h3>
+                    <h5 class="margin-bottom">Author - George Orwell</h5>
+                    <div class="flex flex-col product-price">
+                        <span class="current-price">
+                            <strong>₹900</strong>
+                            <span class="old-price">₹1,000</span></span>
+                    </div>
+                    <span class="discount-price">10% off</span>
+                    <div class="flex margin-top margin-bottom prduct-quantity">
+                        <h5>Quantity:</h5>
+                        <button class="btn-quantity">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <label for="card-input-qty"></label>
+                        <input id="card-input-qty" class="card-input" type="number" value="" min="1">
+                        <button class="btn-quantity">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col">
+                        <button class="btn btn-primary-outline">
+                            Remove from Cart
+                        </button>
+                        <button class="btn btn-primary-outline">
+                            Move to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- price detail card  -->
+        </section>
+    </main>
+
+
+</body>
+
+</html>

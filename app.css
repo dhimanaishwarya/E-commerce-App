@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--ZINC-COLOR-LIGHT);
+  box-shadow: 0 6px 4px -6px var(--ZINC-COLOR-DARK);
 }
 
 .header-wrapper a {
@@ -28,7 +29,7 @@
 
 .search-container button {
   float: right;
-  padding: 6px 10px;
+  padding: 8px;
   background: var(--BRAND-COLOR-LIGHT);
   font-size: 1rem;
   border: none;
@@ -47,4 +48,20 @@
 
 .badge-btn {
   color: var(--BRAND-COLOR-DARK);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.margin-top {
+  margin-top: 0.8rem;
+}
+
+.margin-bottom {
+  margin-bottom: 0.8rem;
 }

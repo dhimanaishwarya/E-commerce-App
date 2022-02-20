@@ -1,6 +1,7 @@
 /* main container styles  */
 .main-container {
   color: var(--FONT-COLOR);
+  padding: 4rem;
 }
 
 .main-container > h2 {

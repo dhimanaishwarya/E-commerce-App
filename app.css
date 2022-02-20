@@ -1,1 +1,50 @@
 @import url(./components/root.css);
+
+/* header styles  */
+.header-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--ZINC-COLOR-LIGHT);
+}
+
+.header-wrapper a {
+  color: var(--BRAND-COLOR-DARK);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper .search-container input {
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  background: var(--BRAND-COLOR-LIGHT);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: var(--BRAND-COLOR-DARK);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.search-container button:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  padding: 8px;
+}
+
+.badge-btn {
+  color: var(--BRAND-COLOR-DARK);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aishwarya Dhiman">
+    <title>E-commerce-app | My Cart</title>
+    <link rel="stylesheet" href="https://zeta-ui.netlify.app/components/root.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="../app.css">
+
+</head>
+
+<body>
+    <!-- header starts  -->
+    <header class="header-wrapper">
+        <a class="active" href="../index.html">
+            <h1>BookzKart</h1>
+        </a>
+        <form action="" class="search-container">
+            <input type="search" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="topnav">
+            <a href="login.html"><button class="btn btn-primary-solid">
+                    Login</button></a>
+            <a href="./wishlist.html"><button class="btn badge-btn">
+                    <i class="fas fa-heart fa-2x"></i><span class="badge-icon-count">0</span>
+                </button></a>
+            <a href="./cart.html"><button class="btn badge-btn">
+                    <i class="fa fa-shopping-cart fa-2x"></i><span class="badge-icon-count">0</span></button></a>
+        </nav>
+    </header>
+    <!-- header ends  -->
+
+    <main class="main-container">
+        <h2 class="margin-top margin-bottom">CART DETAILS</h2>
+        <section class="flex justify-content-evenly section-cart">
+
+            <!-- product cards  -->
+            <div class="flex card-product card-shadow">
+                <img class="card-product-image" src="../assets/images/1984.jpg" alt="card image" />
+                <div class="card-product-details">
+                    <h3 class="margin-bottom">1984</h3>
+                    <h5 class="margin-bottom">Author - George Orwell</h5>
+                    <div class="flex flex-col product-price">
+                        <span class="current-price">
+                            <strong>₹900</strong>
+                            <span class="old-price">₹1,000</span></span>
+                    </div>
+                    <span class="discount-price">10% off</span>
+                    <div class="flex margin-top margin-bottom prduct-quantity">
+                        <h5>Quantity:</h5>
+                        <button class="btn-quantity">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <label for="card-input-qty"></label>
+                        <input id="card-input-qty" class="card-input" type="number" value="1" min="1">
+                        <button class="btn-quantity">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col">
+                        <button class="btn btn-primary-outline">
+                            Remove from Cart
+                        </button>
+                        <button class="btn btn-primary-outline">
+                            Move to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- price detail card  -->
+            <div class="flex flex-col">
+                <div class="card-product cart-price-card card-shadow">
+                    <h3 class="margin-bottom">PRICE DETAILS</h3>
+                    <hr>
+                    <div class="flex margin-top margin-bottom justify-content-between">
+                        <span>Price (2 items)</span>
+                        <span>₹ 4,999</span>
+                    </div>
+                    <div class="flex justify-content-between margin-top margin-bottom">
+                        <span>Discount</span> <span>- ₹ 1,999</span>
+                    </div>
+                    <div class="flex justify-content-between margin-top margin-bottom">
+                        <span>Delivery Charges</span>
+                        <span>₹ 499</span>
+                    </div>
+                    <hr>
+                    <div class="flex justify-content-between">
+                        <h4 class="margin-top margin-bottom">TOTAL AMOUNT</h4>
+                        <span class="margin-top margin-bottom">₹ 3,499</span>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col margin-top">
+                        <p class="">You will save ₹ 1,999 on this purchase</p>
+                        <button class="btn btn-secondary-solid">Place Order</button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

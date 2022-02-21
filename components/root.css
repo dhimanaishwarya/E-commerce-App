@@ -2,6 +2,10 @@
 
 @import url("./signup.css");
 @import url("./login.css");
+@import url("./cart.css");
+@import url("./wishlist.css");
+@import url("./product.css");
+
 /* reset-css */
 * {
   margin: 0;

@@ -1,0 +1,24 @@
+.aside-container {
+  background-color: var(--COLOR-WHITE);
+  padding: 3rem 0;
+  width: 24rem;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+.filter-container {
+  padding: 1rem;
+}
+
+.btn-filter {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--BRAND-COLOR-DARK);
+}
+
+.btn-filter:hover {
+  text-decoration: underline;
+}

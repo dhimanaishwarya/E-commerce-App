@@ -28,7 +28,7 @@
 }
 
 .old-price {
-  margin: 0.5rem;
+  margin: 8px;
   text-decoration-line: line-through;
   text-decoration-color: var(--BRAND-COLOR);
 }
@@ -46,7 +46,7 @@
   border: none;
   color: var(--FONT-COLOR);
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 8px;
   margin-left: 4px;
   margin-right: 4px;
   width: 2rem;

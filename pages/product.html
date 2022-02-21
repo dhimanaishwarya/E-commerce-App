@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-app | My Cart</title>
+    <link rel="stylesheet" href="https://zeta-ui.netlify.app/components/root.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="../app.css">
+
+</head>
+
+<body>
+
+    <!-- header starts  -->
+    <header class="header-wrapper">
+        <a class="active" href="../index.html">
+            <h1>BookzKart</h1>
+        </a>
+        <form action="" class="search-container">
+            <input type="search" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="topnav">
+            <a href="login.html"><button class="btn btn-primary-solid">
+                    Login</button></a>
+            <a href="./wishlist.html"><button class="btn badge-btn">
+                    <i class="fas fa-heart fa-2x"></i><span class="badge-icon-count">0</span>
+                </button></a>
+            <a href="./cart.html"><button class="btn badge-btn">
+                    <i class="fa fa-shopping-cart fa-2x"></i><span class="badge-icon-count">0</span></button></a>
+        </nav>
+    </header>
+    <!-- header ends  -->
+
+    <div class="main-container flex">
+        <aside class="aside-container">
+            <div class="flex justify-content-between filter-container">
+                <h2 class="margin-bottom">Filters</h2>
+                <button class="cursor-pointer btn-filter">Clear</button>
+            </div>
+            <div class="flex flex-col filter-container">
+                <h3 class="margin-bottom">Price</h3>
+                <div class="flex justify-content-between">
+                    <span>Rs.100</span>
+                    <span>Rs.500</span>
+                    <span>Rs.1000</span>
+                </div>
+                <input type="range" step="0.1" class="cursor-pointer" />
+            </div>
+            <div class="flex flex-col justify-content-between filter-container">
+                <h3 class="margin-bottom">Language</h3>
+                <label class="cursor-pointer" for="language-english">
+                    <input class="cursor-pointer" type="checkbox" name="category" id="language-english"
+                        value="language-english" />
+                    English
+                </label>
+                <label class="cursor-pointer" for="language-hindi">
+                    <input class="cursor-pointer" type="checkbox" name="category" id="language-hindi"
+                        value="language-hindi" />
+                    Hindi
+                </label>
+                <label class="cursor-pointer" for="language-punjabi">
+                    <input class="cursor-pointer" type="checkbox" name="category" id="language-punjabi"
+                        value="language-punjabi" />
+                    Punjabi
+                </label>
+                <label class="cursor-pointer" for="language-marathi">
+                    <input class="cursor-pointer" type="checkbox" name="category" id="language-marathi"
+                        value="language-marathi" />
+                    Marathi
+                </label>
+            </div>
+            <div class="flex flex-col justify-content-between filter-container">
+                <h3 class="margin-bottom">Rating</h3>
+                <label class="cursor-pointer" for="Rating4above">
+                    <input class="cursor-pointer" type="radio" name="price" id="Rating4above" value="Rating4above" />
+                    4 Stars & above
+                </label>
+                <label class="cursor-pointer" for="Rating3above">
+                    <input class="cursor-pointer" type="radio" name="price" id="Rating3above" value="Rating3above" />
+                    3 Stars & above
+                </label>
+                <label class="cursor-pointer" for="Rating2above">
+                    <input class="cursor-pointer" type="radio" name="price" id="Rating2above" value="Rating2above" />
+                    2 Stars & above
+                </label>
+                <label class="cursor-pointer" for="Rating1above">
+                    <input class="cursor-pointer" type="radio" name="price" id="Rating1above" value="Rating1above" />
+                    1 Star & above
+                </label>
+            </div>
+            <div class="flex flex-col justify-content-between filter-container">
+                <h3 class="margin-bottom">Sort by</h3>
+                <label class="" for="low-to-high">
+                    <input class="cursor-pointer" type="radio" name="price" id="low-to-high" value="Low to High" />
+                    Price - Low to High
+                </label>
+                <label class="cursor-pointer" for="high-to-low">
+                    <input class="cursor-pointer" type="radio" name="price" id="high-to-low" value="High to Low" />
+                    Price - High to Low
+                </label>
+            </div>
+        </aside>
+
+        <!-- cards  -->
+        <main>
+            <h2 class="margin-bottom text-centre">Classics</h2>
+            <section class="flex flex-wrap justify-content-evenly section-cart card-display">
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <span class="card-badge">Best Seller</span>
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></button>
+                    </div>
+                    <h1 class="card-heading">To Kill a Mocking bird</h1>
+                    <img class="card-image" src="../assets/images/mocking_bird.jpg" alt="card image" />
+                    <p class="card-text">'To Kill A Mockingbird' became both an instant bestseller and a critical
+                        success when it was first published in 1960.
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <span class="card-badge">Best Seller</span>
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></button>
+                    </div>
+                    <h1 class="card-heading">The Catcher in the Rye</h1>
+                    <img class="card-image" src="../assets/images/catcher_in_rye.jpg" alt="card image" />
+                    <p class="card-text">The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a
+                        native New Yorker named Holden Caulfield.
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></i></button>
+                    </div>
+                    <h1 class="card-heading">The Girl on the Train</h1>
+                    <img class="card-image" src="../assets/images/train.jpg" alt="card image" />
+                    <p class="card-text">Rachel catches the same commuter train every morning. She knows it will wait at
+                        the
+                        same signal each time. Read to know more.
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <span class="card-badge">Must Read</span>
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></i></button>
+                    </div>
+                    <h1 class="card-heading">Pride and Prejudice</h1>
+                    <img class="card-image" src="../assets/images/cp.jpg" alt="card image" />
+                    <p class="card-text">Since its immediate success in 1813, Pride and Prejudice has remained one of
+                        the
+                        most popular novels in the English language.
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <span class="card-badge">Best Seller</span>
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></button>
+                    </div>
+                    <h1 class="card-heading">The Girl Who Played with Fire</h1>
+                    <img class="card-image" src="../assets/images/fire.jpg" alt="card image" />
+                    <p class="card-text">Rating - 4.1
+                        Part blistering espionage thriller, part riveting police procedural, and part piercing exposé on
+                        social injustice.
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-container card-vertical card-shadow">
+                    <div class="card-header">
+                        <button class="card-btn-icon margin-l">
+                            <i class="fas fa-heart"></i></button>
+                    </div>
+                    <h1 class="card-heading">Murder on the Orient Express</h1>
+                    <img class="card-image" src="../assets/images/orient.jpg" alt="card image" />
+                    <p class="card-text">Isolated and with a killer in their midst, detective Hercule Poirot must
+                        identify
+                        the murderer
+                    </p>
+                    <div class="card-product-price">
+                        <span class="current-price"><strong>₹2000</strong></span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary-solid btn-wishlist">
+                            <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    </div>
+                </div>
+        </main>
+        <!-- cards end  -->
+    </div>
+</body>
+
+</html>

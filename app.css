@@ -77,3 +77,64 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+
+.hero-section {
+  height: 65%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 8px;
+  background-color: var(--ZINC-COLOR-LIGHT);
+}
+
+.hero-image {
+  position: absolute;
+  width: 40rem;
+  top: -5rem;
+}
+
+.hero-text {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: var(--BRAND-COLOR-DARK);
+}
+
+.hero-text > h1 {
+  font-size: 2rem;
+}
+
+.section-books {
+  padding: 3rem;
+}
+
+.section-books > h1 {
+  padding: 2rem;
+  text-align: center;
+}
+.card-collection {
+  cursor: pointer;
+  flex-direction: column;
+  height: 25rem;
+  width: 15rem;
+  border-radius: var(--BORDER-RADIUS);
+  background-color: var(--ZINC-COLOR-LIGHT);
+  text-align: center;
+}
+
+.card-collection > img {
+  height: 20rem;
+  width: 15rem;
+  border-radius: var(--BORDER-RADIUS);
+}
+
+.card-collection > a {
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+  padding: 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

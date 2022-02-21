@@ -14,7 +14,7 @@
   max-width: 35rem;
   overflow: hidden;
   background: var(--ZINC-COLOR-LIGHT);
-  border-radius: 8px;
+  border-radius: var(--BORDER-RADIUS);
 }
 
 .card-product-image {

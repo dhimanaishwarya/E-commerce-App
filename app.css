@@ -118,7 +118,7 @@
   flex-direction: column;
   height: 25rem;
   width: 15rem;
-  border-radius: 8px;
+  border-radius: var(--BORDER-RADIUS);
   background-color: var(--ZINC-COLOR-LIGHT);
   text-align: center;
 }
@@ -126,7 +126,7 @@
 .card-collection > img {
   height: 20rem;
   width: 15rem;
-  border-radius: 8px;
+  border-radius: var(--BORDER-RADIUS);
 }
 
 .card-collection > a {

@@ -1,4 +1,4 @@
-body {
+.container-color {
   background: linear-gradient(
     45deg,
     var(--ZINC-COLOR),
@@ -54,6 +54,6 @@ body {
   justify-content: space-between;
 }
 
-.btn {
+.topnav .btn {
   border: none;
 }

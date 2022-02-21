@@ -77,3 +77,30 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+
+.hero-section {
+  /* background-image: url(./assets/images/bibliophile-animate.svg); */
+  height: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: var(--ZINC-COLOR);
+}
+
+.hero-image {
+  position: absolute;
+  width: 40rem;
+  top: -5rem;
+}
+
+.hero-text {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: var(--BRAND-COLOR-DARK);
+}
+
+.hero-text > h1 {
+  font-size: 2rem;
+}
